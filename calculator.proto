@@ -2,6 +2,8 @@ syntax = "proto3";
 
 package calculator;
 
+option go_package = "github.com/jyotirmoy-paul/nsu_calculator_backend/proto";
+
 import "operation.proto";
 import "factorization.proto";
 import "average.proto";
