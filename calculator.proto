@@ -9,7 +9,7 @@ import "factorization.proto";
 import "average.proto";
 import "max.proto";
 
-service Calculator {
+service CalculatorService {
     // demonstrates Unary RPC 
     rpc Operate (OperationRequest) returns (OperationResponse);
 
