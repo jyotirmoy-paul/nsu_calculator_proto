@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package calculator;
+
+message AverageRequest {
+    double number = 1;
+}
+
+message AverageResponse {
+    double result = 1;
+}

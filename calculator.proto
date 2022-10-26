@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+package calculator;
+
+import "operation.proto";
+import "factorization.proto";
+import "average.proto";
+import "max.proto";
+
+service Calculator {
+    // demonstrates Unary RPC 
+    rpc Operate (OperationRequest) returns (OperationResponse);
+
+    // demonstrates Server Streaming RPC
+    rpc Factorize (FactorizationRequest) returns (stream FactorizationResponse);
+    
+    // demonstrates Client Streaming RPC
+    rpc FindAverage (stream AverageRequest) returns (AverageResponse);
+
+    // demonstrates Bi-directional Streaming RPC
+    rpc FindMax (stream MaxRequest) returns (stream MaxResponse);
+}

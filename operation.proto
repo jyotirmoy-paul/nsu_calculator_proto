@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+package calculator;
+
+enum OperationType {
+    OPERATION_TYPE_UNSPECIFIED = 0;
+    OPERATION_TYPE_ADD = 1;
+    OPERATION_TYPE_SUBTRACT = 2;
+    OPERATION_TYPE_MULTIPLY = 3;
+    OPERATION_TYPE_DIVIDE = 4;
+}
+
+message OperationRequest {
+    double operandA = 1;
+    double operandB = 2;
+    OperationType operationType = 3;
+}
+
+message OperationResponse {
+    double result = 1;
+}
