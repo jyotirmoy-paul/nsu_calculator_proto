@@ -5,9 +5,9 @@ package calculator;
 option go_package = "github.com/jyotirmoy-paul/nsu_calculator_backend/proto";
 
 message FactorizationRequest {
-    int64 number = 1;
+    int32 number = 1;
 }
 
 message FactorizationResponse {
-    int64 factor = 1;
+    int32 factor = 1;
 }
