@@ -1,4 +1,4 @@
 # ignore everything other than the .proto files & the .gitignore itself
 *
 !.gitignore
-!.*.proto
+!*.proto

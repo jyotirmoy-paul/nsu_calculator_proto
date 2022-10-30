@@ -7,7 +7,7 @@ option go_package = "github.com/jyotirmoy-paul/nsu_calculator_backend/proto";
 import "operation.proto";
 import "factorization.proto";
 import "average.proto";
-import "max.proto";
+import "sum.proto";
 
 service CalculatorService {
     // demonstrates Unary RPC 
@@ -20,5 +20,5 @@ service CalculatorService {
     rpc FindAverage (stream AverageRequest) returns (AverageResponse);
 
     // demonstrates Bi-directional Streaming RPC
-    rpc FindMax (stream MaxRequest) returns (stream MaxResponse);
+    rpc Sum (stream SumRequest) returns (stream SumResponse);
 }

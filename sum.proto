@@ -4,10 +4,10 @@ package calculator;
 
 option go_package = "github.com/jyotirmoy-paul/nsu_calculator_backend/proto";
 
-message MaxRequest {
+message SumRequest {
     double number = 1;
 }
 
-message MaxResponse {
+message SumResponse {
     double number = 1;
 }
